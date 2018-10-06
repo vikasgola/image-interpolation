@@ -107,7 +107,7 @@ def improveImage(fileName):
     
     
     print("================ "+fileName+" =================")
-    fileName = "./output/" + fileName[6:]
+    fileName = "../output/" + fileName[6:]
     cv2.imwrite(fileName,pred*255)
     print("Mean Squared Error:" ,MSE)
     print("PSNR:",PSNR)
